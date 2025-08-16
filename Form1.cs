@@ -275,13 +275,11 @@ namespace ImgConvert
 
             output_bitmapa.Dispose();
             output_bitmapa = new Bitmap(input_bitmapa.Width, input_bitmapa.Height, PixelFormat.Format24bppRgb);
-
-            progressBar1.Value = 0;
-            progressBar1.MarqueeAnimationSpeed = 0;
-            progressBar1.Maximum = input_bitmapa.Width * input_bitmapa.Height;
             GC.Collect();
             binary16 = new UInt16[input_bitmapa.Height, input_bitmapa.Width];
             GC.Collect();
+            progressBar1.Value = 0;
+            progressBar1.Maximum = input_bitmapa.Width * input_bitmapa.Height;
 
             for (UInt16 y = 0; y < input_bitmapa.Height; y++)
             {
@@ -309,7 +307,7 @@ namespace ImgConvert
 
             }
             pictureBox1.Image = output_bitmapa;
-            format = Format.f8dither;
+            format = Format.f16dither;
             button2.Enabled = true;
             button3.Enabled = true;
             button4.Enabled = true;
