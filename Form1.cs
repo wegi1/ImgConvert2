@@ -294,10 +294,7 @@ namespace ImgConvert
                     b1 = (byte)Math.Min((rnd.Next() & 7) + b, 255);
                     rgb = Color.FromArgb(r1, g1, b1);
 
-                    // binary8[y][x] = RGB24TO8BIT(r1, g1, b1);
-                    // b = (rgb >> 16) & 0xC0;
-                    // g = (rgb >> 8) & 0xE0;
-                    // r = rgb & 0xE0;
+
                     binary16[y, x] = rgb24to8bit(r1, g1, b1);
                     output_bitmapa.SetPixel(x, y, rgb);
                     progressBar1.Increment(1);
@@ -376,7 +373,7 @@ namespace ImgConvert
 
         private void Form1_HelpButtonClicked(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            MessageBox.Show("Image converter by ProteusPL (c)2025.\tJebaæ PIS !!!");
+            MessageBox.Show("Image converter by ProteusPL (c)2025.\tJebaÃ¦ PIS !!!");
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -502,9 +499,9 @@ namespace ImgConvert
 
         private void pictureBox1_DragDrop(object sender, DragEventArgs e)
         {
-#pragma warning disable CS8600 // Konwertowanie litera³u null lub mo¿liwej wartoœci null na nienullowalny typ.
+#pragma warning disable CS8600 // Konwertowanie literaÂ³u null lub moÂ¿liwej wartoÂœci null na nienullowalny typ.
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-#pragma warning restore CS8600 // Konwertowanie litera³u null lub mo¿liwej wartoœci null na nienullowalny typ.
+#pragma warning restore CS8600 // Konwertowanie literaÂ³u null lub moÂ¿liwej wartoÂœci null na nienullowalny typ.
 
 
             // pictureBox1.Image = Image.FromFile(files[0]);
