@@ -1,1 +1,17 @@
 # ImgConvert
+
+Image conversion tool for microcontroller + LCD displays
+
+Tool for people programming microcontrollers using LCD screens xD
+
+# Features
+- Convert images to RGB565, RGB332, RGB565 dither, RGB332 dither
+- Save output data as RAW rgb, C header file or bitmap (bmp, jpg, png)
+- Supports various image formats
+- Easy to use interface
+- Swap bytes in 16-bit RGB565 format (optional)
+- Supports dithering for RGB332 and RGB565 formats
+
+-# Screenshots
+![Screenshot](https://raw.githubusercontent.com/0x4D/ImgConvert/master/screenshots/FD31B05C-F6DE-4673-A160-ABA0CA8C42D3.png)
+![Screenshot](https://raw.githubusercontent.com/0x4D/ImgConvert/master/screenshots/B8745691-EDCA-48B0-AF8F-66DEF6E6779A.png)
